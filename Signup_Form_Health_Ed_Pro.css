@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #bee5bf;
+  background-color: #e6fefa;
 }
 
 .wrapper {
@@ -20,8 +20,8 @@ body {
   width: 750px;
   height: 450px;
   background: transparent;
-  border: 2px solid #517664;
-  box-shadow: 0 0 25px #517664;
+  border: 2px solid #c6e4ee;
+  box-shadow: 0 0 25px #c6e4ee;
   overflow: hidden;
 }
 
@@ -44,7 +44,8 @@ body {
   transform: translateX(0);
   opacity: 1;
   filter: blur(0);
-  transition: 0.7s ease;
+  transition: .7s ease;
+  transition-delay: calc(0.1s * var(--j));
 }
 
 .wrapper.active .form-box.login .animation {
@@ -57,12 +58,31 @@ body {
 .wrapper .form-box.signup {
   right: 0;
   padding: 0 40px 0 60px;
-  display: none;
+  pointer-events: none;
+}
+
+.wrapper.active .form-box.signup {
+pointer-events: auto;
+}
+
+.wrapper .form-box.signup .animation {
+  transform: translate(120%);
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.7s ease;
+  transition-delay: calc(0.1s * var(--j));
+}
+
+.wrapper.active .form-box.signup .animation {
+  transform: translate(0);
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: calc(0.1s * var(--i));
 }
 
 .form-box h2 {
   font-size: 32px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -134,7 +154,7 @@ body {
   border-radius: 40px;
   cursor: pointer;
   font-size: 16px;
-  color: #517664;
+  color: black;
   font-weight: 600;
   z-index: 1;
   overflow: hidden;
@@ -147,7 +167,7 @@ body {
   left: 0;
   width: 100%;
   height: 300%;
-  background: linear-gradient(#bee5bf, #517664, #bee5bf, #517664);
+  background: linear-gradient(#b5dce9, #c6e4ee, #b5dce9, #c6e4ee);
   z-index: -1;
   transition: 0.5s;
 }
@@ -193,7 +213,8 @@ body {
   transform: translateX(0);
   opacity: 1;
   filter: blur(0);
-  transition: 0.7s ease;
+  transition: .7s ease;
+  transition-delay: calc(0.1s * var(--j));
 }
 
 .wrapper.active .info-text.login .animation {
@@ -207,19 +228,38 @@ body {
   left: 0;
   text-align: left;
   padding: 0 150px 60px 40px;
-  display: none;
+  pointer-events: none;
+}
+
+.wrapper.active .info-text.signup {
+  pointer-events: auto;
+}
+
+.wrapper .info-text.signup .animation {
+  transform: translate(-120%);
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.7s ease;
+  transition-delay: calc(0.1s * var(--j));
+}
+
+.wrapper.active .info-text.signup .animation {
+  transform: translate(0);
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: calc(0.1s * var(--i));
 }
 
 .info-text h2 {
   font-size: 36px;
-  color: white;
+  color: black;
   line-height: 1.3;
   text-transform: uppercase;
 }
 
 .info-text p {
   font-size: 16px;
-  color: white;
+  color: black;
 }
 
 .wrapper .bg-animate {
@@ -228,11 +268,12 @@ body {
   right: 0;
   width: 850px;
   height: 600px;
-  background: linear-gradient(45deg, #517664, #bee5bf);
-  border-bottom: 3px solid #517664;
+  background: linear-gradient(45deg, #c6e4ee, #b5dce9);
+  border-bottom: 3px solid #c6e4ee;
   transform: rotate(10deg) skewY(40deg);
   transform-origin: bottom right;
   transition: 1.5s ease;
+  transition-delay: 1.2s;
 }
 
 .wrapper.active .bg-animate {
@@ -246,11 +287,12 @@ body {
   left: 250px;
   width: 850px;
   height: 700px;
-  background: #517664;
-  border-bottom: 3px solid #bee5bf;
+  background: #c6e4ee;
+  border-bottom: 3px solid #b5dce9;
   transform: rotate(0deg) skewY(0deg);
   transform-origin: bottom left;
   transition: 1.5 ease;
+  transition-delay: .5s;
 }
 
 .wrapper.active .bg-animate2 {
