@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D6EBF2; /* Light teal background */
+    color: #333;
+}
+
+h1, h2 {
+    color: #486180;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.container {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-bar {
+    background-color: #add8e6; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.search-bar:hover {
+    background-color: #333; 
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.search-bar input {
+    flex: 1; /* Allow input field to expand to fill available space */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 25%;
+}
+
+.search-bar button:hover {
+    background-color: #006400;
+}
+
+.emergency-numbers {
+    border-radius: 10px;
+    background-color: #add8e6; 
+    padding-left: 5px;
+}
+
+.state-specific-helplines {
+    background-color: #add8e6; 
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.government-guidelines {
+    background-color: #add8e6; 
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.additional-resources {
+    background-color: #add8e6;
+    border-radius: 10px;
+    padding-left: 5px;
+
+}
+
+.emergency-guidelines {
+    background-color: #add8e6;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+
+.emergency-button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+    
+}
+
+.emergency-button:hover {
+    background-color: #006400;
+}
