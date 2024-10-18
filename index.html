@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Community</h1>
+        <nav>
+            <a href="#posts">Posts</a>
+            <a href="#create-post">Create Post</a>
+            <a href="#chat">Chat</a>
+            <a href="#trending">Trending</a>
+            <a href="#events">Events</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#about">About</a>
+            
+        </nav>
+    </header>
+    <div id="notification"></div>
+    <main>
+        <section id="profile">
+            <h2>User Profile</h2>
+            <p>Name: John Doe</p>
+            <p>Email: john.doe@example.com</p>
+            <button id="logout">Logout</button>
+        </section>
+        <section id="login" style="display:none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="posts">
+            <h2>Recent Posts</h2>
+            <div class="post">
+                <h3>Post Title 1</h3>
+                <p>This is the content of the first post.</p>
+                <button class="like-button">Like</button> <span class="likes">0</span> likes
+                <div class="comments">
+                    <h4>Comments</h4>
+                    <p>User1: Great post!</p>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Add a comment" required>
+                        <button type="submit">Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="post">
+                <h3>Post Title 2</h3>
+                <p>This is the content of the second post.</p>
+                <button class="like-button">Like</button> <span class="likes">0</span> likes
+                <div class="comments">
+                    <h4>Comments</h4>
+                    <p>User2: Thanks for sharing!</p>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Add a comment" required>
+                        <button type="submit">Comment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="create-post">
+            <h2>Create a New Post</h2>
+            <form id="post-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="content" placeholder="Content" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section id="chat">
+            <h2>Real-Time Chat</h2>
+            <div id="chat-box">
+                <div id="messages"></div>
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Type a message" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        <section id="trending">
+            <h2>Trending Topics</h2>
+            <div id="trending-topics">
+                
+            </div>
+        </section>
+        <section id="events">
+            <h2>Community Events</h2>
+            <div id="map"></div>
+        </section>
+        <section id="dashboard">
+            <h2>User Dashboard</h2>
+            <div id="activity-feed">
+                <h3>Activity Feed</h3>
+                
+            </div>
+        </section>
+        <section id="about">
+            <h2>About This Community</h2>
+            <p>Welcome to the Epic Community! We are a vibrant and diverse group of people who come together to share ideas, support each other, and celebrate our differences. Here, you'll find a safe space where you can express yourself, connect with others, and grow personally and professionally. Whether you're here to find new friends, gain knowledge, or contribute your own insights, there's something for everyone. Join us in our journey to create a more connected and compassionate community. Feel free to explore, engage, and enjoy!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HealthEdPro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
