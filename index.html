@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Blog Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-posts">
+            <h2>Latest Posts</h2>
+            <div class="post-container">
+                
+                <article class="post">
+                    <h3>Post Title 1</h3>
+                    <p>Post content for the first blog post...</p>
+                    <p><strong>Author:</strong> John Doe | <strong>Date:</strong> January 1, 2023</p>
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button class="comment-btn">Comment</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                    <div class="comments-container"></div>
+                </article>
+                <!-- Post 2 -->
+                <article class="post">
+                    <h3>Post Title 2</h3>
+                    <p>Post content for the second blog post...</p>
+                    <p><strong>Author:</strong> Jane Smith | <strong>Date:</strong> January 2, 2023</p>
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button class="comment-btn">Comment</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                    <div class="comments-container"></div>
+                </article>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Post Title 1</a></li>
+                <li><a href="#">Post Title 2</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+            </ul>
+            <h3>Follow Us</h3>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </aside>
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HealthEdPro. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
