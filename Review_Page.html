@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="Review_Page.css">
+</head>
+<body>
+    <header>
+        <h1>Product Reviews</h1>
+    </header>
+    <main>
+        <div class="content-box">
+            <section id="review-form-section">
+                <h2>Submit Your Review</h2>
+                <form id="review-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="review" placeholder="Your Review" required></textarea>
+                    <div>
+                        <label for="rating">Rating:</label>
+                        <select id="rating" required>
+                            <option value="">Select...</option>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section id="reviews">
+                <h2>Customer Reviews</h2>
+                <!-- Reviews will be dynamically inserted here -->
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
